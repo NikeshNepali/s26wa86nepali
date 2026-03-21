@@ -3,7 +3,16 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  if(vOne > vTwo){
+    vOne -= vTwo;
+  }else{
+    vTwo -= vOne;
+  }
+  res.send(`Values are: ${vOne} and ${vTwo}`);
 });
 
 module.exports = router;
+
+vOne = 10;
+vTwo = 15;
+
