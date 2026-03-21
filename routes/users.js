@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+vOne = 10;
+vTwo = 15;
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   if(vOne > vTwo){
@@ -12,7 +15,3 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-
-vOne = 10;
-vTwo = 15;
-
